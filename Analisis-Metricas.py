@@ -13,7 +13,7 @@ TXT_LINKS = "Acción-Twitter.txt"
 SALIDA_XLSX = "Metricas-Acción.xlsx"
 ORIGINAL_PROFILE = Path("/Users/facundovelastiqui/Library/Application Support/Google/Chrome/Default")
 COPIA_PERFIL = Path("./chrome_sesion_automatizada")
-API_KEY = "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"
+API_KEY = 
 MAX_RETRIES = 5
 
 # === OPENAI CLIENT ===
@@ -28,8 +28,8 @@ def resumen_conceptual(texto):
     try:
         completion = client.chat.completions.create(
             model="gpt-4",
-            messages=[
-                {"role": "system", "content": "Tu tarea es analizar tweets y generar una única etiqueta temática breve, de hasta 4 palabras, que resuma conceptualmente de qué trata el tweet. No repitas frases literales. No uses puntuación. El objetivo es agrupar tweets similares bajo esta etiqueta. Usá un estilo conciso y homogéneo. Ejemplos: 'gestión municipal Soledad Martínez', 'negociación interna PRO', 'acuerdo electoral Vicente López'"},
+            messages=[2
+                {"role": "system", "content": "Tu tarea es analizar tweets y generar una única etiqueta temática breve, de hasta 4 palabras, que resuma conceptualmente de qué trata el tweet. No repitas frases literales. No uses puntuación. El objetivo es agrupar tweets similares bajo esta etiqueta. Usá un estilo conciso y homogéneo"},
                 {"role": "user", "content": texto}
             ],
             max_tokens=30,
