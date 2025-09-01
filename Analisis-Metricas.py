@@ -11,8 +11,8 @@ import os
 # === CONFIGURACIÓN ===
 TXT_LINKS = "Acción-Twitter.txt"
 SALIDA_XLSX = "Metricas-Acción.xlsx"
-ORIGINAL_PROFILE = Path("/Users/facundovelastiqui/Library/Application Support/Google/Chrome/Default")
-COPIA_PERFIL = Path("./chrome_sesion_automatizada")
+ORIGINAL_PROFILE = "Copiar la dirección de carpeta del Google Chrome original"
+COPIA_PERFIL = "Generar una copia automatizada de Google Chrome para que se abra una sesión aparte"
 API_KEY = 
 MAX_RETRIES = 5
 
